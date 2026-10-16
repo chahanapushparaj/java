@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🎬 Movie Ticket Booking System</h1>
+        <p>Book Your Favourite Movie!</p>
+    </header>
+
+    <div class="container">
+        <h2>Book Your Tickets</h2>
+
+        <label>Select Movie:</label>
+        <select id="movie">
+            <option value="">Choose Movie</option>
+            <option value="150">Meesaya Murukku 2 - ₹150</option>
+            <option value="180">Moodharathiri - ₹180</option>
+            <option value="200">Immortal - ₹200</option>
+        </select>
+
+        <label>Select Show Time:</label>
+        <select id="time">
+            <option value="">Choose Time</option>
+            <option value="10 AM">10 AM</option>
+            <option value="2 PM">2 PM</option>
+            <option value="6 PM">6 PM</option>
+        </select>
+
+        <label>Number of Tickets:</label>
+        <input type="number" id="quantity" min="1" placeholder="Enter quantity">
+
+        <label>Email Address:</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <button onclick="bookTicket()">Book Tickets</button>
+
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>
